@@ -11,7 +11,7 @@ public class ClickUpProperties {
 
     public static String getToken() {
         if (getProperty(TOKEN).isEmpty() || getProperty(TOKEN).startsWith("YOUR")){
-            return System.getProperty(TOKEN);
+            return System.getProperty("TOKEN");
         }
         else{
             return getProperty(TOKEN);
@@ -21,7 +21,7 @@ public class ClickUpProperties {
 
     public static String getTeamId() {
         if (getProperty(TEAM_ID).isEmpty() || getProperty(TEAM_ID).startsWith("YOUR")){
-            return System.getProperty(TEAM_ID);
+            return System.getProperty("TEAM_ID");
         }
         else{
             return getProperty(TEAM_ID);
